@@ -157,11 +157,10 @@ app.post('/api/students/register', async (req, res) => {
       gender,
       email,
       contact_number,
-      class_course,
       enrollment_date
     } = req.body;
 
-    // 1. Validation of all required fields
+    // 1. Validation of all 7 required fields (strictly no Class/Course)
     if (
       !student_id || !student_id.trim() ||
       !student_name || !student_name.trim() ||
@@ -169,12 +168,11 @@ app.post('/api/students/register', async (req, res) => {
       !gender || !gender.trim() ||
       !email || !email.trim() ||
       !contact_number || !contact_number.trim() ||
-      !class_course || !class_course.trim() ||
       !enrollment_date || !enrollment_date.trim()
     ) {
       return res.status(400).json({
         success: false,
-        message: 'All fields are required. Please fill in Student ID, Student Name, Age, Gender, Email, Contact Number, Class/Course, and Enrollment Date.'
+        message: 'All fields are required. Please fill in Student ID, Student Name, Age, Gender, Email, Contact Number, and Enrollment Date.'
       });
     }
 
@@ -184,7 +182,7 @@ app.post('/api/students/register', async (req, res) => {
     const trimmedGender = gender.trim();
     const trimmedEmail = email.trim().toLowerCase();
     const trimmedContact = contact_number.trim();
-    const trimmedCourse = class_course.trim();
+    const trimmedCourse = req.body.class_course ? req.body.class_course.trim() : 'Quality Education Standard';
     const trimmedDate = enrollment_date.trim();
 
     // Age validation
@@ -230,7 +228,6 @@ app.post('/api/students/register', async (req, res) => {
       gender: trimmedGender,
       email: trimmedEmail,
       contact_number: trimmedContact,
-      class_course: trimmedCourse,
       enrollment_date: trimmedDate
     };
 

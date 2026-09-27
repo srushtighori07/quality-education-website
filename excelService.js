@@ -6,7 +6,8 @@ const fs = require('fs');
 const EXCEL_FILE_PATH = path.join(__dirname, 'students_records.xlsx');
 const SHEET_NAME = 'Registered_Students';
 
-// Standard column headers for the Excel sheet
+// Standard column headers strictly matching requirement 14:
+// | Student ID | Name | Age | Gender | Email | Contact | Enrollment Date |
 const EXCEL_HEADERS = [
   'Student ID',
   'Student Name',
@@ -14,9 +15,7 @@ const EXCEL_HEADERS = [
   'Gender',
   'Email',
   'Contact Number',
-  'Class/Course',
-  'Enrollment Date',
-  'Registration Timestamp'
+  'Enrollment Date'
 ];
 
 /**
@@ -25,12 +24,6 @@ const EXCEL_HEADERS = [
  */
 function initExcelFile(initialStudents = []) {
   try {
-    if (fs.existsSync(EXCEL_FILE_PATH)) {
-      console.log(`[ExcelService] Existing Excel records file found at: ${EXCEL_FILE_PATH}`);
-      return;
-    }
-
-    console.log(`[ExcelService] Creating new Excel records file at: ${EXCEL_FILE_PATH}`);
     const rows = [];
 
     // If initial seed students provided, format them into rows
@@ -43,9 +36,7 @@ function initExcelFile(initialStudents = []) {
           'Gender': s.gender || 'Not Specified',
           'Email': s.email,
           'Contact Number': s.contact_number || s.mobile,
-          'Class/Course': s.class_course || s.course,
-          'Enrollment Date': s.enrollment_date || s.registration_date || new Date().toISOString().split('T')[0],
-          'Registration Timestamp': s.created_at || new Date().toISOString().replace('T', ' ').substring(0, 19)
+          'Enrollment Date': s.enrollment_date || s.registration_date || new Date().toISOString().split('T')[0]
         });
       });
     }
@@ -57,12 +48,10 @@ function initExcelFile(initialStudents = []) {
       { wch: 16 }, // Student ID
       { wch: 24 }, // Student Name
       { wch: 8 },  // Age
-      { wch: 12 }, // Gender
+      { wch: 14 }, // Gender
       { wch: 30 }, // Email
       { wch: 18 }, // Contact Number
-      { wch: 32 }, // Class/Course
-      { wch: 16 }, // Enrollment Date
-      { wch: 22 }  // Registration Timestamp
+      { wch: 18 }  // Enrollment Date
     ];
 
     const workbook = XLSX.utils.book_new();
@@ -95,9 +84,7 @@ function getStudentsFromExcel() {
       gender: r['Gender'] || '',
       email: r['Email'] || '',
       contact_number: String(r['Contact Number'] || ''),
-      class_course: r['Class/Course'] || '',
-      enrollment_date: r['Enrollment Date'] || '',
-      registration_timestamp: r['Registration Timestamp'] || ''
+      enrollment_date: r['Enrollment Date'] || ''
     }));
   } catch (err) {
     console.error('[ExcelService] Error reading from Excel file:', err);
@@ -129,7 +116,7 @@ function appendStudentToExcel(student) {
       throw new Error('Missing essential student information for Excel record.');
     }
 
-    const trimmedId = String(student.student_id).trim();
+    const trimmedId = String(student.student_id).trim().toUpperCase();
 
     // Check duplicate in Excel
     if (isDuplicateStudentId(trimmedId)) {
@@ -139,7 +126,7 @@ function appendStudentToExcel(student) {
       throw error;
     }
 
-    // Read existing workbook
+    // Read existing workbook or create new
     let workbook;
     if (fs.existsSync(EXCEL_FILE_PATH)) {
       workbook = XLSX.readFile(EXCEL_FILE_PATH);
@@ -153,18 +140,14 @@ function appendStudentToExcel(student) {
       existingRows = XLSX.utils.sheet_to_json(worksheet);
     }
 
-    const nowTimestamp = new Date().toISOString().replace('T', ' ').substring(0, 19);
-
     const newRecord = {
       'Student ID': trimmedId,
       'Student Name': String(student.student_name).trim(),
       'Age': Number(student.age) || '',
       'Gender': String(student.gender || '').trim(),
-      'Email': String(student.email).trim(),
+      'Email': String(student.email).trim().toLowerCase(),
       'Contact Number': String(student.contact_number || '').trim(),
-      'Class/Course': String(student.class_course || '').trim(),
-      'Enrollment Date': String(student.enrollment_date || '').trim(),
-      'Registration Timestamp': nowTimestamp
+      'Enrollment Date': String(student.enrollment_date || '').trim()
     };
 
     existingRows.push(newRecord);
@@ -176,12 +159,10 @@ function appendStudentToExcel(student) {
       { wch: 16 }, // Student ID
       { wch: 24 }, // Student Name
       { wch: 8 },  // Age
-      { wch: 12 }, // Gender
+      { wch: 14 }, // Gender
       { wch: 30 }, // Email
       { wch: 18 }, // Contact Number
-      { wch: 32 }, // Class/Course
-      { wch: 16 }, // Enrollment Date
-      { wch: 22 }  // Registration Timestamp
+      { wch: 18 }  // Enrollment Date
     ];
 
     // Re-attach sheet
