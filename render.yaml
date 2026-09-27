@@ -1,13 +1,7 @@
 services:
   - type: web
-    name: quality-education-portal
-    env: node
+    name: quality-education-website
+    runtime: node
     plan: free
-    region: oregon
     buildCommand: npm install
-    startCommand: node server.js
-    envVars:
-      - key: NODE_ENV
-        value: production
-      - key: OWNER_PASSKEY
-        value: AdminEdu@2026
+    startCommand: npm start
