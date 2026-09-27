@@ -1,0 +1,27 @@
+{
+  "name": "quality-education-student-management",
+  "version": "1.0.0",
+  "description": "Quality Education Student Management CRUD System - Learn Today, Build a Better Tomorrow",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test-api.js"
+  },
+  "keywords": [
+    "education",
+    "student-management",
+    "crud",
+    "sqlite",
+    "express",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduQuality | Quality Education & Academic Excellence Portal</title>
+  <meta name="description" content="Quality Education Portal - Learn Today, Build a Better Tomorrow. Accredited programs, interactive assessments, attendance tracking, and verified institutional student records.">
+  
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Design System CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- SheetJS / XLSX Client Library for Excel Generation & Export -->
+  <script src="js/xlsx.full.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <i class="fas fa-graduation-cap"></i>
+          <strong>“Quality Education – Learn Today, Build a Better Tomorrow.”</strong>
+        </span>
+        <span class="top-bar-item">
+          <i class="fas fa-globe"></i> UN Sustainable Development Goal 4 Aligned
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <span class="institution-pill">
+          <i class="fas fa-shield-halved"></i> Accredited Educational Portal
+        </span>
+        <a href="#contact" class="top-bar-item" style="color: inherit;">
+          <i class="fas fa-headset"></i> Academic Help Desk
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#home" class="brand">
+        <div class="brand-logo-icon">
+          <i class="fas fa-book-open-reader"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">EduQuality</span>
+          <span class="brand-tagline">Quality Education Portal</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu (11 Dedicated Sections, NO Dashboard) -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fas fa-circle-info"></i> About</a></li>
+          <li><a href="#registration" class="nav-link"><i class="fas fa-user-plus"></i> Registration</a></li>
+          <li><a href="#courses" class="nav-link"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+          <li><a href="#materials" class="nav-link"><i class="fas fa-book"></i> Materials</a></li>
+          <li><a href="#quiz" class="nav-link"><i class="fas fa-list-check"></i> Quiz</a></li>
+          <li><a href="#attendance" class="nav-link"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+          <li><a href="#announcements" class="nav-link"><i class="fas fa-bullhorn"></i> Notices</a></li>
+          <li><a href="#teachers" class="nav-link"><i class="fas fa-chalkboard-user"></i> Teachers</a></li>
+          <li><a href="#feedback" class="nav-link"><i class="fas fa-comment-dots"></i> Feedback</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li>
+            <a href="#registration" class="btn btn-primary btn-sm nav-cta">
+              <i class="fas fa-pen-to-square"></i> Register
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================================================== -->
+  <!-- MAIN CONTENT CONTAINER                                   -->
+  <!-- ======================================================== -->
+  <main>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 1: HOME                                          -->
+    <!-- ======================================================== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="hero-badge">
+            <i class="fas fa-award"></i> Accredited Quality Education Platform
+          </div>
+          <h1 class="hero-title">
+            Empowering Every Learner Through <span class="highlight">Quality Education</span>
+          </h1>
+          <div class="hero-quote-box">
+            <p class="hero-quote">
+              “Quality Education: Learn Today, Build a Better Tomorrow.”
+            </p>
+          </div>
+          <p class="hero-text">
+            Welcome to the premier educational gateway dedicated to inclusive, high-standard learning. Access accredited courses, curated academic materials, interactive assessments, and automated verified student registration.
+          </p>
+          <div class="hero-actions">
+            <a href="#registration" class="btn btn-primary btn-lg">
+              <i class="fas fa-user-plus"></i> Student Registration
+            </a>
+            <a href="#courses" class="btn btn-outline btn-lg">
+              <i class="fas fa-graduation-cap"></i> Explore Courses
+            </a>
+            <a href="#materials" class="btn btn-outline-sage btn-lg">
+              <i class="fas fa-book-open"></i> Study Materials
+            </a>
+            <a href="#quiz" class="btn btn-secondary btn-lg">
+              <i class="fas fa-pencil"></i> Online Quiz
+            </a>
+          </div>
+
+          <!-- Stats Counters -->
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="stat-number">14,200+</span>
+              <span class="stat-label">Active Learners</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">98.6%</span>
+              <span class="stat-label">Course Pass Rate</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">48+</span>
+              <span class="stat-label">Accredited Modules</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Equal Access (SDG 4)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column Visual -->
+        <div class="hero-right">
+          <div class="hero-visual-card">
+            <div class="hero-visual-header">
+              <div class="hero-visual-badge">
+                <div class="hero-visual-icon">
+                  <i class="fas fa-shield-halved"></i>
+                </div>
+                <div>
+                  <h4 class="hero-visual-title">Academic Standards</h4>
+                  <span class="hero-visual-subtitle">Verified & Quality-Assured</span>
+                </div>
+              </div>
+              <span class="course-tag">Active Portal</span>
+            </div>
+
+            <div class="hero-feature-list">
+              <div class="hero-feature-item">
+                <i class="fas fa-circle-check feature-check-icon"></i>
+                <div class="feature-item-text">
+                  <strong>Standardized Academic Curricula</strong>
+                  <span>Engineered to meet international quality and SDG 4 benchmarks.</span>
+                </div>
+              </div>
+
+              <div class="hero-feature-item">
+                <i class="fas fa-circle-check feature-check-icon"></i>
+                <div class="feature-item-text">
+                  <strong>Permanent Institutional Registry</strong>
+                  <span>Every student registration is automatically archived and verified into official records.</span>
+                </div>
+              </div>
+
+              <div class="hero-feature-item">
+                <i class="fas fa-circle-check feature-check-icon"></i>
+                <div class="feature-item-text">
+                  <strong>Continuous Assessment Engine</strong>
+                  <span>Instant self-evaluation quizzes with detailed explanations and certificates.</span>
+                </div>
+              </div>
+
+              <div class="hero-feature-item">
+                <i class="fas fa-circle-check feature-check-icon"></i>
+                <div class="feature-item-text">
+                  <strong>Dedicated Teacher Mentorship</strong>
+                  <span>Direct faculty guidance with published qualifications and office hours.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Institutional Badge -->
+            <div class="hero-excel-badge">
+              <i class="fas fa-shield-check"></i>
+              <div>
+                <span>Institutional Quality & Compliance Standards Synchronized</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 2: ABOUT QUALITY EDUCATION                       -->
+    <!-- ======================================================== -->
+    <section id="about" class="section section-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Educational Manifesto</span>
+          <h2 class="section-title">About Quality Education</h2>
+          <p class="section-description">
+            Quality education is not merely the transmission of facts; it is the cultivation of critical curiosity, ethical discernment, universal human values, and practical capabilities that enable individuals to thrive and uplift their societies.
+          </p>
+        </div>
+
+        <!-- UN SDG 4 Highlight Banner -->
+        <div class="sdg-banner">
+          <div class="sdg-badge-large">
+            <span>UN GOAL</span>
+            <span>4</span>
+          </div>
+          <div class="sdg-content">
+            <h3>United Nations Sustainable Development Goal 4 (SDG 4)</h3>
+            <p>
+              <strong>“Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.”</strong> Our portal is built upon this fundamental charter. We champion barrier-free knowledge, transparent academic records, qualified teacher engagement, and modern pedagogical materials accessible across every device.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Pillars of Quality Education -->
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fas fa-universal-access"></i>
+            </div>
+            <h4>1. Inclusivity & Equity</h4>
+            <p>Equal access for all learners regardless of background, gender, or geographic location, supported by responsive, accessible digital infrastructure.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h4>2. Qualified Educators</h4>
+            <p>Passionate subject-matter experts and experienced mentors who inspire higher-order thinking, active dialogue, and individualized academic guidance.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h4>3. Modern Pedagogy</h4>
+            <p>Evidence-based curricula combining conceptual depth with practical problem solving, digital literacy, and environmental sustainability.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fas fa-shield-heart"></i>
+            </div>
+            <h4>4. Safe & Holistic Environment</h4>
+            <p>A supportive, calm, and intellectually stimulating atmosphere that prioritizes learner well-being, collaborative growth, and ethical integrity.</p>
+          </div>
+        </div>
+
+        <!-- Comparison Table: Rote vs Quality Education -->
+        <div class="comparison-box">
+          <div class="comparison-header">
+            <h4>Traditional Rote Learning vs. Holistic Quality Education</h4>
+          </div>
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Academic Dimension</th>
+                  <th>Traditional Rote Learning</th>
+                  <th>Holistic Quality Education (Our Standard)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Core Objective</strong></td>
+                  <td>Memorization for exam performance</td>
+                  <td><span class="badge-quality">Deep comprehension, real-world application & curiosity</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Pedagogical Method</strong></td>
+                  <td>Passive lecture-listening & regurgitation</td>
+                  <td><span class="badge-quality">Inquiry-driven, interactive assessments & collaborative projects</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Student Evaluation</strong></td>
+                  <td>High-stakes single-sitting examinations</td>
+                  <td><span class="badge-quality">Continuous assessment, practical quizzes & holistic attendance tracking</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Teacher's Role</strong></td>
+                  <td>Sole authoritarian source of knowledge</td>
+                  <td><span class="badge-quality">Facilitator, research mentor & empathetic learning guide</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Data & Transparency</strong></td>
+                  <td>Siloed, non-verifiable paper records</td>
+                  <td><span class="badge-quality">Permanent verified institutional registry with automated record keeping</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 3: STUDENT REGISTRATION                          -->
+    <!-- (Separate section with clean card-style form,            -->
+    <!-- NO Teacher info or Dashboard, NO public download)        -->
+    <!-- ======================================================== -->
+    <section id="registration" class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Admissions & Registry</span>
+          <h2 class="section-title">Student Registration</h2>
+          <p class="section-description">
+            Complete the official registration form below to enroll into our accredited educational courses. All submitted student information is validated and securely archived into the institution's official registry.
+          </p>
+        </div>
+
+        <div class="registration-container">
+          <div class="registration-card">
+            
+            <div class="registration-header">
+              <div class="reg-title-wrap">
+                <h3>Official Student Enrollment Form</h3>
+                <p>Please enter accurate details. Duplicate Student IDs will be rejected.</p>
+              </div>
+              <div class="secure-badge">
+                <i class="fas fa-shield-halved"></i>
+                <span>Institutional Official Registry</span>
+              </div>
+            </div>
+
+            <!-- Dynamic Alert Banners -->
+            <div id="regSuccessAlert" class="alert-banner alert-success">
+              <i class="fas fa-circle-check alert-icon"></i>
+              <div class="alert-body">
+                <strong>Registration Succeeded!</strong>
+                <span id="regSuccessMsg">The student record has been validated and permanently archived into the institutional database.</span>
+              </div>
+            </div>
+
+            <div id="regErrorAlert" class="alert-banner alert-error">
+              <i class="fas fa-circle-exclamation alert-icon"></i>
+              <div class="alert-body">
+                <strong>Registration Error</strong>
+                <span id="regErrorMsg">Please correct the highlighted fields and retry.</span>
+              </div>
+            </div>
+
+            <!-- The Registration Form (Strictly 8 required fields, NO Teacher info inside) -->
+            <form id="studentRegistrationForm" novalidate>
+              <div class="reg-form-grid">
+                
+                <!-- 1. Student ID -->
+                <div class="form-group">
+                  <label for="regStudentId" class="form-label">
+                    Student ID <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input type="text" id="regStudentId" class="form-input" placeholder="e.g. STU-2026-105" required autocomplete="off">
+                    <i class="fas fa-id-card input-icon"></i>
+                  </div>
+                  <div class="field-hint">Unique identifier (e.g. STU-2026-XXX). Duplicates are prevented.</div>
+                  <div class="field-error" id="errStudentId">Student ID is required and must be unique.</div>
+                </div>
+
+                <!-- 2. Student Name -->
+                <div class="form-group">
+                  <label for="regStudentName" class="form-label">
+                    Student Name <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input type="text" id="regStudentName" class="form-input" placeholder="Full name as per official records" required autocomplete="name">
+                    <i class="fas fa-user input-icon"></i>
+                  </div>
+                  <div class="field-hint">First name, middle name, and surname.</div>
+                  <div class="field-error" id="errStudentName">Please provide the student's full name.</div>
+                </div>
+
+                <!-- 3. Age -->
+                <div class="form-group">
+                  <label for="regAge" class="form-label">
+                    Age <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input type="number" id="regAge" class="form-input" min="10" max="100" placeholder="e.g. 19" required>
+                    <i class="fas fa-calendar-day input-icon"></i>
+                  </div>
+                  <div class="field-hint">Learner's age in completed years (10 to 100).</div>
+                  <div class="field-error" id="errAge">Please enter a valid age between 10 and 100.</div>
+                </div>
+
+                <!-- 4. Gender -->
+                <div class="form-group">
+                  <label for="regGender" class="form-label">
+                    Gender <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <select id="regGender" class="form-select" required>
+                      <option value="">Select Gender</option>
+                      <option value="Female">Female</option>
+                      <option value="Male">Male</option>
+                      <option value="Non-Binary">Non-Binary</option>
+                      <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                    <i class="fas fa-venus-mars input-icon"></i>
+                  </div>
+                  <div class="field-hint">Gender identity for inclusive demographic reporting.</div>
+                  <div class="field-error" id="errGender">Please select a gender option.</div>
+                </div>
+
+                <!-- 5. Email -->
+                <div class="form-group">
+                  <label for="regEmail" class="form-label">
+                    Email Address <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input type="email" id="regEmail" class="form-input" placeholder="student@example.com" required autocomplete="email">
+                    <i class="fas fa-envelope input-icon"></i>
+                  </div>
+                  <div class="field-hint">Academic notifications and records will be sent here.</div>
+                  <div class="field-error" id="errEmail">Please enter a valid email address.</div>
+                </div>
+
+                <!-- 6. Contact Number -->
+                <div class="form-group">
+                  <label for="regContact" class="form-label">
+                    Contact Number <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input type="tel" id="regContact" class="form-input" placeholder="+91 98765 43210" required autocomplete="tel">
+                    <i class="fas fa-phone input-icon"></i>
+                  </div>
+                  <div class="field-hint">Include country/area code (e.g. +91 98765 43210).</div>
+                  <div class="field-error" id="errContact">Please enter a valid phone number (at least 7 digits).</div>
+                </div>
+
+                <!-- 7. Class/Course -->
+                <div class="form-group">
+                  <label for="regCourse" class="form-label">
+                    Class / Course <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <select id="regCourse" class="form-select" required>
+                      <option value="">Choose Course of Study</option>
+                      <option value="Computer Science & AI">Computer Science & Artificial Intelligence</option>
+                      <option value="Environmental Science & Sustainability">Environmental Science & Sustainability (SDG 4)</option>
+                      <option value="Advanced Mathematics & Statistics">Advanced Mathematics & Statistics</option>
+                      <option value="Global Literature & Communication">Global Literature & Professional Communication</option>
+                      <option value="Business Ethics & Leadership">Business Ethics & Organizational Leadership</option>
+                      <option value="Pedagogical Sciences & Educational Tech">Pedagogical Sciences & Educational Technology</option>
+                    </select>
+                    <i class="fas fa-graduation-cap input-icon"></i>
+                  </div>
+                  <div class="field-hint">Accredited academic track selected by the student.</div>
+                  <div class="field-error" id="errCourse">Please select a class or course of study.</div>
+                </div>
+
+                <!-- 8. Enrollment Date -->
+                <div class="form-group">
+                  <label for="regEnrollDate" class="form-label">
+                    Enrollment Date <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input type="date" id="regEnrollDate" class="form-input" required>
+                    <i class="fas fa-calendar-check input-icon"></i>
+                  </div>
+                  <div class="field-hint">Official commencement date for the educational cohort.</div>
+                  <div class="field-error" id="errEnrollDate">Please pick a valid enrollment date.</div>
+                </div>
+
+              </div>
+
+              <!-- Form Actions (Clean & Public: No download buttons shown to general users) -->
+              <div class="reg-actions-row">
+                <div class="reg-submit-btn-wrap">
+                  <button type="submit" class="btn btn-primary btn-lg" id="submitRegBtn">
+                    <i class="fas fa-user-plus"></i> Submit Registration
+                  </button>
+                  <button type="button" class="btn btn-outline" id="resetRegBtn">
+                    <i class="fas fa-rotate-left"></i> Clear Form
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 4: COURSES                                       -->
+    <!-- ======================================================== -->
+    <section id="courses" class="section section-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Curriculum & Degrees</span>
+          <h2 class="section-title">Accredited Courses</h2>
+          <p class="section-description">
+            Explore our multidisciplinary curricula structured to cultivate analytical prowess, ethical responsibility, and future-ready expertise.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All Courses</button>
+          <button class="filter-tab" data-filter="tech">Technology & AI</button>
+          <button class="filter-tab" data-filter="science">Sciences & Environment</button>
+          <button class="filter-tab" data-filter="math">Mathematics</button>
+          <button class="filter-tab" data-filter="humanities">Humanities & Ethics</button>
+          <button class="filter-tab" data-filter="business">Business</button>
+        </div>
+
+        <!-- Courses Grid -->
+        <div class="courses-grid" id="coursesGrid">
+          <!-- Course Card 1 -->
+          <div class="course-card" data-category="tech">
+            <div class="course-card-top">
+              <div class="course-badge-row">
+                <span class="course-tag">Computer Science</span>
+                <span class="course-level">Intermediate</span>
+              </div>
+              <div class="course-code">CS-401</div>
+              <h3 class="course-title">Artificial Intelligence & Ethical Computing</h3>
+              <p class="course-desc">Foundations of neural systems, natural language processing, and the ethical deployment of machine learning for social equity.</p>
+              <div class="course-meta-grid">
+                <div class="course-meta-item">
+                  <i class="fas fa-clock"></i> 14 Weeks
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-award"></i> 4.0 Credits
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-user-tie"></i> Dr. Vikram Malhotra
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-users"></i> 340 Enrolled
+                </div>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn btn-outline-sage btn-sm view-syllabus-btn" data-course="cs401">
+                <i class="fas fa-file-lines"></i> View Syllabus
+              </button>
+              <button class="btn btn-primary btn-sm enroll-course-btn" data-course-name="Computer Science & AI">
+                <i class="fas fa-pen-nib"></i> Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Course Card 2 -->
+          <div class="course-card" data-category="science">
+            <div class="course-card-top">
+              <div class="course-badge-row">
+                <span class="course-tag">Environmental</span>
+                <span class="course-level">Foundational</span>
+              </div>
+              <div class="course-code">ENV-202</div>
+              <h3 class="course-title">Environmental Science & Global Sustainability</h3>
+              <p class="course-desc">Addressing climate resilience, renewable ecological systems, circular economies, and the UN Sustainable Development Goals.</p>
+              <div class="course-meta-grid">
+                <div class="course-meta-item">
+                  <i class="fas fa-clock"></i> 12 Weeks
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-award"></i> 3.5 Credits
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-user-tie"></i> Dr. Sunita Banerjee
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-users"></i> 295 Enrolled
+                </div>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn btn-outline-sage btn-sm view-syllabus-btn" data-course="env202">
+                <i class="fas fa-file-lines"></i> View Syllabus
+              </button>
+              <button class="btn btn-primary btn-sm enroll-course-btn" data-course-name="Environmental Science & Sustainability">
+                <i class="fas fa-pen-nib"></i> Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Course Card 3 -->
+          <div class="course-card" data-category="math">
+            <div class="course-card-top">
+              <div class="course-badge-row">
+                <span class="course-tag">Mathematics</span>
+                <span class="course-level">Advanced</span>
+              </div>
+              <div class="course-code">MTH-305</div>
+              <h3 class="course-title">Advanced Mathematics & Inferential Statistics</h3>
+              <p class="course-desc">Rigorous exploration of linear algebra, multivariate calculus, probability distributions, and statistical hypothesis modeling.</p>
+              <div class="course-meta-grid">
+                <div class="course-meta-item">
+                  <i class="fas fa-clock"></i> 16 Weeks
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-award"></i> 4.5 Credits
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-user-tie"></i> Prof. Arvind Krishnan
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-users"></i> 210 Enrolled
+                </div>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn btn-outline-sage btn-sm view-syllabus-btn" data-course="mth305">
+                <i class="fas fa-file-lines"></i> View Syllabus
+              </button>
+              <button class="btn btn-primary btn-sm enroll-course-btn" data-course-name="Advanced Mathematics & Statistics">
+                <i class="fas fa-pen-nib"></i> Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Course Card 4 -->
+          <div class="course-card" data-category="humanities">
+            <div class="course-card-top">
+              <div class="course-badge-row">
+                <span class="course-tag">Humanities</span>
+                <span class="course-level">All Levels</span>
+              </div>
+              <div class="course-code">LIT-110</div>
+              <h3 class="course-title">Global Literature & Professional Rhetoric</h3>
+              <p class="course-desc">Developing persuasive expression, analytical discourse, cross-cultural literature critique, and impactful communication.</p>
+              <div class="course-meta-grid">
+                <div class="course-meta-item">
+                  <i class="fas fa-clock"></i> 10 Weeks
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-award"></i> 3.0 Credits
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-user-tie"></i> Dr. Emily Richardson
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-users"></i> 380 Enrolled
+                </div>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn btn-outline-sage btn-sm view-syllabus-btn" data-course="lit110">
+                <i class="fas fa-file-lines"></i> View Syllabus
+              </button>
+              <button class="btn btn-primary btn-sm enroll-course-btn" data-course-name="Global Literature & Communication">
+                <i class="fas fa-pen-nib"></i> Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Course Card 5 -->
+          <div class="course-card" data-category="business">
+            <div class="course-card-top">
+              <div class="course-badge-row">
+                <span class="course-tag">Business</span>
+                <span class="course-level">Intermediate</span>
+              </div>
+              <div class="course-code">MGT-312</div>
+              <h3 class="course-title">Business Ethics & Responsible Leadership</h3>
+              <p class="course-desc">Corporate governance, ethical strategy, human-centric management, and aligning enterprise goals with social sustainability.</p>
+              <div class="course-meta-grid">
+                <div class="course-meta-item">
+                  <i class="fas fa-clock"></i> 12 Weeks
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-award"></i> 3.5 Credits
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-user-tie"></i> Prof. Rajeshwari Das
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-users"></i> 260 Enrolled
+                </div>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn btn-outline-sage btn-sm view-syllabus-btn" data-course="mgt312">
+                <i class="fas fa-file-lines"></i> View Syllabus
+              </button>
+              <button class="btn btn-primary btn-sm enroll-course-btn" data-course-name="Business Ethics & Leadership">
+                <i class="fas fa-pen-nib"></i> Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Course Card 6 -->
+          <div class="course-card" data-category="tech">
+            <div class="course-card-top">
+              <div class="course-badge-row">
+                <span class="course-tag">Pedagogy</span>
+                <span class="course-level">Advanced</span>
+              </div>
+              <div class="course-code">EDU-501</div>
+              <h3 class="course-title">Pedagogical Sciences & Educational Tech</h3>
+              <p class="course-desc">Instructional design methodologies, gamified learning environments, adaptive tutoring platforms, and inclusive educational accessibility.</p>
+              <div class="course-meta-grid">
+                <div class="course-meta-item">
+                  <i class="fas fa-clock"></i> 14 Weeks
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-award"></i> 4.0 Credits
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-user-tie"></i> Dr. Marcus Sterling
+                </div>
+                <div class="course-meta-item">
+                  <i class="fas fa-users"></i> 190 Enrolled
+                </div>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn btn-outline-sage btn-sm view-syllabus-btn" data-course="edu501">
+                <i class="fas fa-file-lines"></i> View Syllabus
+              </button>
+              <button class="btn btn-primary btn-sm enroll-course-btn" data-course-name="Pedagogical Sciences & Educational Tech">
+                <i class="fas fa-pen-nib"></i> Enroll Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 5: STUDY MATERIALS                               -->
+    <!-- ======================================================== -->
+    <section id="materials" class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Academic Resources</span>
+          <h2 class="section-title">Study Materials & Handbooks</h2>
+          <p class="section-description">
+            High-caliber academic notes, curated textbooks, lab manuals, and masterclass slide decks freely accessible to registered students.
+          </p>
+        </div>
+
+        <!-- Search and Filter Tool -->
+        <div class="search-filter-bar">
+          <div class="search-box">
+            <i class="fas fa-magnifying-glass search-icon"></i>
+            <input type="text" id="materialSearchInput" class="search-input" placeholder="Search resources by title, topic, or subject...">
+          </div>
+          <div class="filter-tabs" style="margin-bottom: 0;">
+            <button class="filter-tab active" data-mat-filter="all">All Formats</button>
+            <button class="filter-tab" data-mat-filter="pdf">PDF Handbooks</button>
+            <button class="filter-tab" data-mat-filter="slides">Lecture Slides</button>
+            <button class="filter-tab" data-mat-filter="video">Video Lectures</button>
+            <button class="filter-tab" data-mat-filter="notes">Notes & Problem Sets</button>
+          </div>
+        </div>
+
+        <!-- Materials Grid -->
+        <div class="materials-grid" id="materialsGrid">
+          <!-- Item 1 -->
+          <div class="material-card" data-format="pdf" data-title="Foundations of Machine Learning & Neural Networks">
+            <div class="material-top">
+              <div class="material-file-icon type-pdf">
+                <i class="fas fa-file-pdf"></i>
+              </div>
+              <div>
+                <span class="material-subject-badge">Computer Science</span>
+                <span class="course-level">PDF &bull; 4.8 MB</span>
+              </div>
+            </div>
+            <h4 class="material-title">Foundations of Machine Learning & Neural Networks</h4>
+            <p class="material-desc">Comprehensive reference handbook covering mathematical fundamentals, cost functions, gradient descent, and convolutional networks.</p>
+            <div class="material-meta">
+              <span><i class="fas fa-user-edit"></i> Dr. Vikram Malhotra</span>
+              <button class="btn btn-outline btn-sm download-material-btn" data-title="Foundations of Machine Learning" data-ext="pdf">
+                <i class="fas fa-download"></i> Download
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="material-card" data-format="slides" data-title="UN SDG 4: Quality Education Frameworks & Policy">
+            <div class="material-top">
+              <div class="material-file-icon type-slides">
+                <i class="fas fa-file-powerpoint"></i>
+              </div>
+              <div>
+                <span class="material-subject-badge">Policy & SDG 4</span>
+                <span class="course-level">PPTX &bull; 12.4 MB</span>
+              </div>
+            </div>
+            <h4 class="material-title">UN SDG 4: Quality Education Frameworks & Global Policy</h4>
+            <p class="material-desc">Curated lecture presentation examining UNESCO standards, inclusive education metrics, and global educational benchmarks.</p>
+            <div class="material-meta">
+              <span><i class="fas fa-user-edit"></i> UNESCO Academic Chair</span>
+              <button class="btn btn-outline btn-sm download-material-btn" data-title="UN SDG 4 Education Frameworks" data-ext="pptx">
+                <i class="fas fa-download"></i> Download
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="material-card" data-format="notes" data-title="Advanced Probability & Multivariate Calculus Notes">
+            <div class="material-top">
+              <div class="material-file-icon type-notes">
+                <i class="fas fa-file-lines"></i>
+              </div>
+              <div>
+                <span class="material-subject-badge">Mathematics</span>
+                <span class="course-level">DOCX &bull; 2.1 MB</span>
+              </div>
+            </div>
+            <h4 class="material-title">Advanced Probability & Multivariate Calculus Practice Notes</h4>
+            <p class="material-desc">Step-by-step problem sets with worked-out analytical solutions, proofs, and real-world statistical applications.</p>
+            <div class="material-meta">
+              <span><i class="fas fa-user-edit"></i> Prof. Arvind Krishnan</span>
+              <button class="btn btn-outline btn-sm download-material-btn" data-title="Advanced Probability Notes" data-ext="docx">
+                <i class="fas fa-download"></i> Download
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="material-card" data-format="video" data-title="Environmental Sustainability & Carbon Accounting">
+            <div class="material-top">
+              <div class="material-file-icon type-video">
+                <i class="fas fa-video"></i>
+              </div>
+              <div>
+                <span class="material-subject-badge">Environmental</span>
+                <span class="course-level">MP4 &bull; 54 Mins</span>
+              </div>
+            </div>
+            <h4 class="material-title">Environmental Sustainability & Carbon Accounting Masterclass</h4>
+            <p class="material-desc">Recorded seminar covering ecological life-cycle assessment, environmental economics, and carbon offset verification.</p>
+            <div class="material-meta">
+              <span><i class="fas fa-user-edit"></i> Dr. Sunita Banerjee</span>
+              <button class="btn btn-outline btn-sm download-material-btn" data-title="Carbon Accounting Seminar" data-ext="mp4">
+                <i class="fas fa-play"></i> Watch / Stream
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="material-card" data-format="pdf" data-title="Critical Discourse & Professional Communication Guide">
+            <div class="material-top">
+              <div class="material-file-icon type-pdf">
+                <i class="fas fa-file-pdf"></i>
+              </div>
+              <div>
+                <span class="material-subject-badge">Humanities</span>
+                <span class="course-level">PDF &bull; 3.2 MB</span>
+              </div>
+            </div>
+            <h4 class="material-title">Critical Discourse & Professional Communication Guide</h4>
+            <p class="material-desc">Comprehensive manual on structured academic essays, executive briefs, literature synthesis, and peer review methodologies.</p>
+            <div class="material-meta">
+              <span><i class="fas fa-user-edit"></i> Dr. Emily Richardson</span>
+              <button class="btn btn-outline btn-sm download-material-btn" data-title="Communication Guide" data-ext="pdf">
+                <i class="fas fa-download"></i> Download
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="material-card" data-format="notes" data-title="Instructional Systems & Digital Pedagogy Toolkit">
+            <div class="material-top">
+              <div class="material-file-icon type-notes">
+                <i class="fas fa-file-lines"></i>
+              </div>
+              <div>
+                <span class="material-subject-badge">Education Tech</span>
+                <span class="course-level">PDF &bull; 1.9 MB</span>
+              </div>
+            </div>
+            <h4 class="material-title">Instructional Systems & Digital Pedagogy Toolkit</h4>
+            <p class="material-desc">Practical guide for designing blended learning environments, rubrics for authentic assessments, and active learning scaffolds.</p>
+            <div class="material-meta">
+              <span><i class="fas fa-user-edit"></i> Dr. Marcus Sterling</span>
+              <button class="btn btn-outline btn-sm download-material-btn" data-title="Digital Pedagogy Toolkit" data-ext="pdf">
+                <i class="fas fa-download"></i> Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 6: ONLINE QUIZ / ASSESSMENT                      -->
+    <!-- ======================================================== -->
+    <section id="quiz" class="section section-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Self Assessment & Mastery</span>
+          <h2 class="section-title">Online Assessment & Quiz</h2>
+          <p class="section-description">
+            Evaluate your comprehension in real-time. Experience interactive questions, score calculation, instant feedback, and certificate eligibility upon achieving distinction.
+          </p>
+        </div>
+
+        <div class="quiz-wrapper">
+          <!-- Quiz Container Card -->
+          <div class="quiz-card" id="quizContainer">
+            
+            <!-- Track Selector -->
+            <div class="quiz-header-bar">
+              <div>
+                <span class="quiz-track-badge" id="quizCurrentTrack">Track: UN SDG 4 & Quality Education</span>
+              </div>
+              <div class="quiz-timer">
+                <i class="fas fa-stopwatch"></i>
+                <span id="quizTimerText">10:00</span>
+              </div>
+            </div>
+
+            <!-- Track Switcher Pills -->
+            <div class="filter-tabs" style="justify-content: flex-start; margin-bottom: 1.5rem;">
+              <button class="filter-tab active quiz-track-tab" data-track="sdg4">SDG 4 & Quality Education</button>
+              <button class="filter-tab quiz-track-tab" data-track="digital">Digital Literacy & AI</button>
+              <button class="filter-tab quiz-track-tab" data-track="science">Environmental Science</button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="quiz-progress-track">
+              <div class="quiz-progress-bar" id="quizProgressBar"></div>
+            </div>
+
+            <!-- Question Screen -->
+            <div id="quizQuestionScreen">
+              <div class="quiz-question-number" id="quizQuestionCounter">Question 1 of 5</div>
+              <h3 class="quiz-question-title" id="quizQuestionText">What is the central mission of United Nations Sustainable Development Goal 4 (SDG 4)?</h3>
+
+              <div class="quiz-options-list" id="quizOptionsContainer">
+                <!-- Generated dynamically via JS -->
+              </div>
+
+              <div class="quiz-nav-row">
+                <button type="button" class="btn btn-outline btn-sm" id="quizPrevBtn" disabled>
+                  <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <div style="font-size: 0.85rem; color: var(--text-muted);" id="quizAnsweredCount">
+                  0 of 5 Answered
+                </div>
+                <button type="button" class="btn btn-primary btn-sm" id="quizNextBtn">
+                  Next <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Result Screen (Hidden until finished) -->
+            <div class="quiz-result-card" id="quizResultScreen">
+              <div class="score-badge-circle">
+                <strong id="resultScoreValue">90%</strong>
+                <span id="resultGradeText">Distinction</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); color: var(--navy); margin-bottom: 0.5rem;" id="resultHeadline">
+                Outstanding Academic Performance!
+              </h3>
+              <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem auto;" id="resultSummaryText">
+                You have demonstrated mastery in this subject area. Your results reflect deep conceptual understanding and alignment with quality education standards.
+              </p>
+
+              <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button type="button" class="btn btn-primary" id="reviewQuizBtn">
+                  <i class="fas fa-clipboard-check"></i> Review Detailed Explanations
+                </button>
+                <button type="button" class="btn btn-secondary" id="claimCertificateBtn">
+                  <i class="fas fa-certificate"></i> View Certificate of Mastery
+                </button>
+                <button type="button" class="btn btn-outline" id="retakeQuizBtn">
+                  <i class="fas fa-rotate-left"></i> Retake Assessment
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 7: ATTENDANCE & ACTIVITY RECORDS                 -->
+    <!-- (Interactive Student ID lookup with subject breakdown)    -->
+    <!-- ======================================================== -->
+    <section id="attendance" class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Academic Compliance</span>
+          <h2 class="section-title">Attendance & Activity Records</h2>
+          <p class="section-description">
+            Search your attendance logs, subject-wise lecture hours, and academic engagement activities by entering your verified Student ID.
+          </p>
+        </div>
+
+        <div class="records-container">
+          
+          <!-- ID Lookup Card -->
+          <div class="record-lookup-card">
+            <form id="attendanceLookupForm">
+              <div class="lookup-form-row">
+                <div class="lookup-input-wrap">
+                  <i class="fas fa-id-card input-icon"></i>
+                  <input type="text" id="attendanceStudentIdInput" class="form-input" placeholder="Enter Student ID (e.g. STU-2026-001)" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="lookupAttendanceBtn">
+                  <i class="fas fa-magnifying-glass"></i> Check Records
+                </button>
+              </div>
+            </form>
+
+            <div class="quick-id-chips">
+              <span class="chip-label">Quick Test Sample IDs:</span>
+              <button type="button" class="id-chip demo-id-chip" data-id="STU-2026-001">STU-2026-001 (Aarav)</button>
+              <button type="button" class="id-chip demo-id-chip" data-id="STU-2026-002">STU-2026-002 (Ananya)</button>
+              <button type="button" class="id-chip demo-id-chip" data-id="STU-2026-003">STU-2026-003 (Rohan)</button>
+            </div>
+          </div>
+
+          <!-- Results Display Wrapper -->
+          <div id="attendanceDisplayWrap">
+            
+            <!-- Summary Grid -->
+            <div class="attendance-grid">
+              
+              <!-- Left Gauge Card -->
+              <div class="attendance-summary-card">
+                <div class="attendance-gauge" id="attendanceGaugeCircle">
+                  <div class="attendance-gauge-inner">
+                    <span class="gauge-pct" id="attOverallPct">95.0%</span>
+                    <span class="gauge-sub">Attendance</span>
+                  </div>
+                </div>
+
+                <h4 style="font-family: var(--font-heading); color: var(--navy); margin-bottom: 0.25rem;" id="attStudentName">
+                  Aarav Sharma
+                </h4>
+                <span class="course-level" id="attStudentIdBadge">ID: STU-2026-001</span>
+                <span class="excel-meta-badge" style="margin-top: 0.75rem;" id="attStatusBadge">
+                  <i class="fas fa-shield-check"></i> Good Standing (Honor Roll)
+                </span>
+
+                <div class="attendance-metrics-list">
+                  <div class="metric-row">
+                    <span>Enrolled Course:</span>
+                    <span id="attCourseName">Computer Science & AI</span>
+                  </div>
+                  <div class="metric-row">
+                    <span>Total Lectures Held:</span>
+                    <span id="attTotalClasses">40 Classes</span>
+                  </div>
+                  <div class="metric-row">
+                    <span>Lectures Attended:</span>
+                    <span id="attAttendedClasses">38 Classes</span>
+                  </div>
+                  <div class="metric-row">
+                    <span>Absences:</span>
+                    <span id="attMissedClasses">2 Classes</span>
+                  </div>
+                  <div class="metric-row">
+                    <span>Registration Date:</span>
+                    <span id="attEnrollDate">2026-01-15</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Breakdown Card -->
+              <div class="attendance-details-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                  <h4 style="font-family: var(--font-heading); color: var(--navy);">
+                    <i class="fas fa-chart-column" style="color: var(--sage-dark);"></i> Subject-Wise Breakdown
+                  </h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Current Academic Term</span>
+                </div>
+
+                <div id="subjectBreakdownContainer">
+                  <!-- Dynamically Rendered Subjects -->
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Activity Records Card -->
+            <div class="activity-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                  <h4 style="font-family: var(--font-heading); color: var(--navy);">
+                    <i class="fas fa-list-check" style="color: var(--sage-dark);"></i> Recent Academic Activity Log
+                  </h4>
+                  <span style="font-size: 0.85rem; color: var(--text-muted);">Verified coursework, submissions, and seminar credits</span>
+                </div>
+                <button type="button" class="btn btn-outline-sage btn-sm" onclick="window.print()">
+                  <i class="fas fa-print"></i> Print Transcript
+                </button>
+              </div>
+
+              <div style="overflow-x: auto;">
+                <table class="activity-table">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Activity / Deliverable</th>
+                      <th>Category</th>
+                      <th>Status / Grade</th>
+                      <th>Academic Credits</th>
+                    </tr>
+                  </thead>
+                  <tbody id="activityLogBody">
+                    <!-- Populated dynamically via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 8: ANNOUNCEMENTS                                 -->
+    <!-- ======================================================== -->
+    <section id="announcements" class="section section-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Notice Board</span>
+          <h2 class="section-title">Official Announcements</h2>
+          <p class="section-description">
+            Stay up to date with exam timetables, academic workshops, guest lectures, and scholarship opportunities.
+          </p>
+        </div>
+
+        <!-- Filter tabs for notices -->
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-ann-filter="all">All Notices</button>
+          <button class="filter-tab" data-ann-filter="academic">Academics</button>
+          <button class="filter-tab" data-ann-filter="exam">Examinations</button>
+          <button class="filter-tab" data-ann-filter="event">Workshops & Events</button>
+          <button class="filter-tab" data-ann-filter="scholarship">Grants & Honors</button>
+        </div>
+
+        <div class="announcements-grid" id="announcementsGrid">
+          <!-- Announcement 1 -->
+          <div class="announcement-card" data-cat="exam">
+            <div class="announcement-top">
+              <span class="announcement-date"><i class="fas fa-calendar"></i> Oct 05, 2026</span>
+              <span class="announcement-priority priority-high">High Priority</span>
+            </div>
+            <h4 class="announcement-title">Mid-Semester Assessment Timetable Published</h4>
+            <p class="announcement-summary">The examination committee has released the schedule for mid-term comprehensive evaluations across all departments.</p>
+            <div class="announcement-footer">
+              <span class="course-level">Examination Board</span>
+              <button class="btn btn-outline-sage btn-sm read-notice-btn" data-notice-id="1">
+                Read Notice <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Announcement 2 -->
+          <div class="announcement-card" data-cat="academic">
+            <div class="announcement-top">
+              <span class="announcement-date"><i class="fas fa-calendar"></i> Sep 28, 2026</span>
+              <span class="announcement-priority priority-notice">Academic Notice</span>
+            </div>
+            <h4 class="announcement-title">Updated Reading Resources on UN SDG 4</h4>
+            <p class="announcement-summary">New open-access peer-reviewed literature on inclusive pedagogical frameworks has been appended to the study repository.</p>
+            <div class="announcement-footer">
+              <span class="course-level">Library Services</span>
+              <button class="btn btn-outline-sage btn-sm read-notice-btn" data-notice-id="2">
+                Read Notice <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Announcement 3 -->
+          <div class="announcement-card" data-cat="scholarship">
+            <div class="announcement-top">
+              <span class="announcement-date"><i class="fas fa-calendar"></i> Sep 25, 2026</span>
+              <span class="announcement-priority priority-general">Opportunity</span>
+            </div>
+            <h4 class="announcement-title">Academic Merit Fellowships 2026–2027</h4>
+            <p class="announcement-summary">Applications are officially invited for merit fellowships. Eligible students with 90%+ attendance and distinction marks may apply.</p>
+            <div class="announcement-footer">
+              <span class="course-level">Scholarship Council</span>
+              <button class="btn btn-outline-sage btn-sm read-notice-btn" data-notice-id="3">
+                Read Notice <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 9: TEACHER INFORMATION                           -->
+    <!-- (Separate Teacher Section with contact/help information) -->
+    <!-- ======================================================== -->
+    <section id="teachers" class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Distinguished Faculty</span>
+          <h2 class="section-title">Teacher Information</h2>
+          <p class="section-description">
+            Meet our esteemed educators and academic mentors. Each faculty member brings profound domain mastery, pedagogical excellence, and dedicated availability to support student success.
+          </p>
+        </div>
+
+        <div class="teachers-grid">
+          <!-- Teacher 1 -->
+          <div class="teacher-card">
+            <div class="teacher-header">
+              <div class="teacher-avatar">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <div class="teacher-title-wrap">
+                <h4>Dr. Vikram Malhotra</h4>
+                <div class="teacher-subject">Computer Science & AI</div>
+              </div>
+            </div>
+
+            <div class="teacher-details-list">
+              <div class="teacher-detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>Qualification:</strong>
+                  <div>Ph.D. in Computer Science (Stanford University)</div>
+                </div>
+              </div>
+              <div class="teacher-detail-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <strong>Experience:</strong>
+                  <div>14+ Years in Machine Learning Research & Higher Ed</div>
+                </div>
+              </div>
+              <div class="teacher-detail-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Contact Email:</strong>
+                  <div>v.malhotra@qualityedu.org</div>
+                </div>
+              </div>
+              <div class="teacher-detail-item">
+                <i class="fas fa-door-open"></i>
+                <div>
+                  <strong>Office & Consultation:</strong>
+                  <div>Turing Hall 304 &bull; Mon/Wed 2:00 PM – 4:00 PM</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="teacher-footer">
+              <button class="btn btn-outline btn-sm contact-teacher-btn" data-name="Dr. Vikram Malhotra" data-email="v.malhotra@qualityedu.org">
+                <i class="fas fa-comments"></i> Send Query / Consultation
+              </button>
+            </div>
+          </div>
+
+          <!-- Teacher 2 -->
+          <div class="teacher-card">
+            <div class="teacher-header">
+              <div class="teacher-avatar">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <div class="teacher-title-wrap">
+                <h4>Dr. Sunita Banerjee</h4>
+                <div class="teacher-subject">Environmental Science & SDG 4</div>
+              </div>
+            </div>
+
+            <div class="teacher-details-list">
+              <div class="teacher-detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>Qualification:</strong>
+                  <div>Ph.D. in Ecological Systems (Cambridge University)</div>
+                </div>
+              </div>
+              <div class="teacher-detail-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <strong>Experience:</strong>
+                  <div>12+ Years in UN Environmental Policy & Teaching</div>
+                </div>
+              </div>
+              <div class="teacher-detail-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Contact Email:</strong>
+                  <div>s.banerjee@qualityedu.org</div>
+                </div>
+              </div>
+              <div class="teacher-detail-item">
+                <i class="fas fa-door-open"></i>
+                <div>
+                  <strong>Office & Consultation:</strong>
+                  <div>BioSciences Bldg 112 &bull; Tue/Thu 10:00 AM – 12:00 PM</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="teacher-footer">
+              <button class="btn btn-outline btn-sm contact-teacher-btn" data-name="Dr. Sunita Banerjee" data-email="s.banerjee@qualityedu.org">
+                <i class="fas fa-comments"></i> Send Query / Consultation
+              </button>
+            </div>
+          </div>
+
+          <!-- Teacher 3 -->
+          <div class="teacher-card">
+            <div class="teacher-header">
+              <div class="teacher-avatar">
+                <i class="fas fa-chalkboard-user"></i>
+              </div>
+              <div class="teacher-title-wrap">
+                <h4>Prof. Arvind Krishnan</h4>
+                <div class="teacher-subject">Mathematics & Statistics</div>
+              </div>
+            </div>
+
+            <div class="teacher-details-list">
+              <div class="teacher-detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>Qualification:</strong>
+                  <div>M.S. & M.Phil. in Applied Mathematics (IISc Bangalore)</div>
+                </div>
+              </div>
+              <div class="teacher-detail-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <strong>Experience:</strong>
+                  <div>16+ Years in Actuarial Modeling & Analytical Rigor</div>
+                </div>
+              </div>
+              <div class="teacher-detail-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Contact Email:</strong>
+                  <div>a.krishnan@qualityedu.org</div>
+                </div>
+              </div>
+              <div class="teacher-detail-item">
+                <i class="fas fa-door-open"></i>
+                <div>
+                  <strong>Office & Consultation:</strong>
+                  <div>Ramanujan Wing 201 &bull; Friday 11:00 AM – 2:00 PM</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="teacher-footer">
+              <button class="btn btn-outline btn-sm contact-teacher-btn" data-name="Prof. Arvind Krishnan" data-email="a.krishnan@qualityedu.org">
+                <i class="fas fa-comments"></i> Send Query / Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 10: FEEDBACK                                     -->
+    <!-- ======================================================== -->
+    <section id="feedback" class="section section-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Continuous Improvement</span>
+          <h2 class="section-title">Student & Community Feedback</h2>
+          <p class="section-description">
+            Your insights drive our educational standards forward. Share your ratings, curriculum suggestions, or learning experience with our leadership council.
+          </p>
+        </div>
+
+        <div class="feedback-grid">
+          
+          <!-- Feedback Form Card -->
+          <div class="feedback-form-card">
+            <h3 style="font-family: var(--font-heading); color: var(--navy); margin-bottom: 0.5rem;">
+              Submit Your Evaluation
+            </h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              Rate our curriculum quality, mentorship, and platform usability.
+            </p>
+
+            <form id="feedbackForm" novalidate>
+              <div class="form-group">
+                <label class="form-label">
+                  Feedback Category <span class="required">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <select id="fbCategory" class="form-select" required>
+                    <option value="">Select Category</option>
+                    <option value="Curriculum Quality">Curriculum & Course Content Quality</option>
+                    <option value="Teacher Effectiveness">Teaching & Faculty Mentorship</option>
+                    <option value="Study Materials">Academic Study Materials & Notes</option>
+                    <option value="Platform Usability">Portal Usability & Assessment System</option>
+                    <option value="General Suggestion">General Academic Suggestion</option>
+                  </select>
+                  <i class="fas fa-layer-group input-icon"></i>
+                </div>
+              </div>
+
+              <!-- Interactive 5-Star Rating -->
+              <div class="form-group">
+                <label class="form-label">
+                  Overall Rating <span class="required">*</span>
+                </label>
+                <div class="star-rating-wrap" id="starRatingContainer">
+                  <button type="button" class="star-btn active" data-rating="1"><i class="fas fa-star"></i></button>
+                  <button type="button" class="star-btn active" data-rating="2"><i class="fas fa-star"></i></button>
+                  <button type="button" class="star-btn active" data-rating="3"><i class="fas fa-star"></i></button>
+                  <button type="button" class="star-btn active" data-rating="4"><i class="fas fa-star"></i></button>
+                  <button type="button" class="star-btn active" data-rating="5"><i class="fas fa-star"></i></button>
+                  <span class="rating-text-label" id="ratingTextLabel">5 Stars - Excellent</span>
+                </div>
+                <input type="hidden" id="fbRatingVal" value="5">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Your Name (Optional)</label>
+                <div class="input-wrapper">
+                  <input type="text" id="fbName" class="form-input" placeholder="Leave blank to submit anonymously">
+                  <i class="fas fa-user-ninja input-icon"></i>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email (Optional)</label>
+                <div class="input-wrapper">
+                  <input type="email" id="fbEmail" class="form-input" placeholder="For acknowledgement or follow-up">
+                  <i class="fas fa-envelope input-icon"></i>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">
+                  Detailed Comments / Suggestions <span class="required">*</span>
+                </label>
+                <textarea id="fbComments" class="form-textarea" placeholder="Share specific thoughts on how we can further elevate academic standards..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" id="submitFeedbackBtn">
+                <i class="fas fa-paper-plane"></i> Submit Feedback
+              </button>
+            </form>
+          </div>
+
+          <!-- Testimonial Showcase Column -->
+          <div class="testimonials-column" id="testimonialsList">
+            <!-- Populated via JS / default seeds -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 11: CONTACT / HELP                               -->
+    <!-- ======================================================== -->
+    <section id="contact" class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Student Support Desk</span>
+          <h2 class="section-title">Contact & Academic Help</h2>
+          <p class="section-description">
+            Need guidance regarding admissions, curriculum prerequisites, attendance compliance, or quiz certifications? Our support desk is at your service.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details Column -->
+          <div class="contact-info-col">
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <i class="fas fa-building-columns"></i>
+              </div>
+              <div class="contact-text-wrap">
+                <h5>Academic Campus</h5>
+                <p>EduQuality Academic Foundation<br>108 Knowledge Boulevard, Higher Learning Zone<br>Karnataka, India &bull; PIN: 560001</p>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <i class="fas fa-headset"></i>
+              </div>
+              <div class="contact-text-wrap">
+                <h5>Helpline & Student Support</h5>
+                <p>Toll-Free: +91 1800-425-EDU1 (08:00 AM – 06:00 PM)<br>Admissions Desk: +91 80 2345 6789</p>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <i class="fas fa-envelope-open-text"></i>
+              </div>
+              <div class="contact-text-wrap">
+                <h5>Direct Inquiries</h5>
+                <p>Admissions: admissions@qualityedu.org<br>Registrar: registrar@qualityedu.org<br>Support: helpdesk@qualityedu.org</p>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <i class="fas fa-vault"></i>
+              </div>
+              <div class="contact-text-wrap">
+                <h5>Institutional Master Registry Archive</h5>
+                <p>Student enrollment records are permanently secured in the central institutional archive. Master records access and Excel data exports are restricted exclusively to the authorized website owner and central registrar.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <h3 style="font-family: var(--font-heading); color: var(--navy); margin-bottom: 0.5rem;">
+              Send a Help Inquiry
+            </h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              Submit your inquiry below. A support ticket ID will be generated immediately.
+            </p>
+
+            <form id="helpInquiryForm" novalidate>
+              <div class="form-group">
+                <label class="form-label">Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="helpName" class="form-input" placeholder="Your name" required autocomplete="name">
+                  <i class="fas fa-user input-icon"></i>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="helpEmail" class="form-input" placeholder="Your email address" required autocomplete="email">
+                  <i class="fas fa-envelope input-icon"></i>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Subject / Topic <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <select id="helpSubject" class="form-select" required>
+                    <option value="">Select Topic</option>
+                    <option value="Student Registration Inquiry">Student Registration Assistance</option>
+                    <option value="Course Syllabus Request">Course Syllabus & Curriculum</option>
+                    <option value="Online Assessment Help">Online Quiz / Assessment Technical Support</option>
+                    <option value="Attendance Inquiry">Attendance Records Query</option>
+                    <option value="Other Assistance">Other General Inquiry</option>
+                  </select>
+                  <i class="fas fa-tag input-icon"></i>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Your Message <span class="required">*</span></label>
+                <textarea id="helpMessage" class="form-textarea" placeholder="Detail your question or request..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" id="submitHelpBtn">
+                <i class="fas fa-paper-plane"></i> Submit Help Ticket
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Frequently Asked Questions Accordion -->
+        <div class="faq-section">
+          <div style="text-align: center; margin-bottom: 2.5rem;">
+            <span class="section-badge">Knowledge Base</span>
+            <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--navy);">
+              Frequently Asked Questions (FAQ)
+            </h3>
+          </div>
+
+          <div class="accordion-item active">
+            <button class="accordion-header" type="button">
+              <span class="accordion-title">How is student registration data handled?</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-body">
+              Whenever a student registration form is submitted and validated, our backend system automatically archives the student details into a dedicated, organized Excel spreadsheet (<code>students_records.xlsx</code>) and database. Each student is stored with complete demographics, contact details, course, and enrollment date. To maintain confidentiality and institutional data security, downloading or viewing the full registry is reserved strictly for the main website owner and central administration.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span class="accordion-title">Are the study materials completely free to access?</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-body">
+              Yes! Aligned with UN Sustainable Development Goal 4 (SDG 4) for inclusive, equitable learning, all curated textbooks, lecture presentations, worksheets, and recorded masterclasses in our Study Materials section are accessible freely to all learners.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span class="accordion-title">How do I verify my Attendance & Academic Activity?</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-body">
+              Navigate to the <strong>Attendance & Activity Records</strong> section and input your unique Student ID (e.g. STU-2026-001 or the ID you received upon registration). The system will fetch your overall attendance percentage, subject-by-subject breakdown, compliance status, and your recent academic coursework activity log.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span class="accordion-title">Can I retake the Online Quiz Assessments?</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-body">
+              Certainly. Learners are encouraged to retake assessments across all three curriculum tracks (SDG 4, Digital Literacy, and Environmental Science) to reinforce understanding. Detailed feedback and explanations are provided after every attempt.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span class="accordion-title">How can I book a consultation with a course teacher?</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-body">
+              Visit the dedicated <strong>Teacher Information</strong> section where each faculty member's qualification, experience, office hours, and contact email are listed. Click the "Send Query / Consultation" button on any teacher's profile to dispatch an inquiry directly.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- FOOTER                                                   -->
+  <!-- ======================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="brand" style="margin-bottom: 0.5rem;">
+            <div class="brand-logo-icon" style="border-color: var(--sage);">
+              <i class="fas fa-book-open-reader"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="color: var(--white);">EduQuality</span>
+              <span class="brand-tagline" style="color: var(--sage);">Quality Education Portal</span>
+            </div>
+          </div>
+          <p>
+            Dedicated to the advancement of inclusive, equitable, and world-class educational opportunities in line with United Nations SDG 4.
+          </p>
+          <div style="margin-top: 1.25rem;">
+            <span class="institution-pill">
+              <i class="fas fa-shield-halved"></i> Institutional Registry Secured
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fas fa-angle-right"></i> Home Overview</a></li>
+            <li><a href="#about"><i class="fas fa-angle-right"></i> About Quality Education</a></li>
+            <li><a href="#registration"><i class="fas fa-angle-right"></i> Student Registration</a></li>
+            <li><a href="#courses"><i class="fas fa-angle-right"></i> Accredited Courses</a></li>
+            <li><a href="#materials"><i class="fas fa-angle-right"></i> Study Materials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Academic Tools</h5>
+          <ul class="footer-links">
+            <li><a href="#quiz"><i class="fas fa-angle-right"></i> Online Assessments</a></li>
+            <li><a href="#attendance"><i class="fas fa-angle-right"></i> Attendance Records</a></li>
+            <li><a href="#announcements"><i class="fas fa-angle-right"></i> Academic Notices</a></li>
+            <li><a href="#teachers"><i class="fas fa-angle-right"></i> Teacher Information</a></li>
+            <li><a href="#feedback"><i class="fas fa-angle-right"></i> Student Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Administration & Help</h5>
+          <ul class="footer-links">
+            <li><a href="#contact"><i class="fas fa-angle-right"></i> Help Desk & FAQ</a></li>
+            <li><a href="#contact"><i class="fas fa-angle-right"></i> Campus Office Hours</a></li>
+            <li><a href="#teachers"><i class="fas fa-angle-right"></i> Faculty Directory</a></li>
+            <li>
+              <a href="javascript:void(0)" id="footerOwnerLink" style="color: var(--sage); font-weight: 600;">
+                <i class="fas fa-lock"></i> Owner Access (Authorized)
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>EduQuality Education Portal</strong>. “Quality Education – Learn Today, Build a Better Tomorrow.”
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <button type="button" class="owner-lock-pill" id="footerLockBtn" title="Main Website Owner Registry Portal">
+            <i class="fas fa-user-shield"></i> Owner Access
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: WEBSITE OWNER AUTHENTICATION & EXCEL REGISTRY     -->
+  <!-- (Restricted: ONLY main website owner can access/download)-->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="ownerAccessModal">
+    <div class="modal-box" style="max-width: 960px;">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <i class="fas fa-user-shield" style="color: var(--navy); font-size: 1.5rem;"></i>
+          <div>
+            <h3 class="modal-title">Website Owner Registry Console</h3>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Confidential Student Registration Archive</span>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeOwnerModalBtn">&times;</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        
+        <!-- View 1: Unauthenticated Login Form -->
+        <div id="ownerLoginView" class="owner-login-box">
+          <div class="owner-icon-wrap">
+            <i class="fas fa-key"></i>
+          </div>
+          <h4 style="font-family: var(--font-heading); color: var(--navy); font-size: 1.3rem; margin-bottom: 0.5rem;">
+            Owner Authentication Required
+          </h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1.5rem;">
+            Downloading and viewing the master Excel (.xlsx) registry is restricted exclusively to the main website owner. Please enter your secret passkey below.
+          </p>
+
+          <form id="ownerLoginForm" novalidate>
+            <div class="form-group" style="text-align: left;">
+              <label for="ownerPasskeyInput" class="form-label">
+                Owner Secret Passkey <span class="required">*</span>
+              </label>
+              <div class="input-wrapper">
+                <input type="password" id="ownerPasskeyInput" class="form-input" placeholder="Enter owner secret passkey" required autocomplete="current-password">
+                <i class="fas fa-lock input-icon"></i>
+              </div>
+              <div class="field-hint" style="margin-top: 0.4rem;">
+                Default configured passkey: <code>AdminEdu@2026</code>
+              </div>
+              <div class="field-error" id="errOwnerPasskey">Invalid passkey. Access denied.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;" id="submitOwnerAuthBtn">
+              <i class="fas fa-unlock"></i> Authenticate & Access Excel Records
+            </button>
+          </form>
+        </div>
+
+        <!-- View 2: Authenticated Owner Console (Hidden until passkey verified) -->
+        <div id="ownerConsoleView" style="display: none;">
+          <div class="owner-status-bar">
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                <span class="excel-meta-badge" style="background-color: #E8F5E9; color: #1B5E20; padding: 0.25rem 0.75rem;">
+                  <i class="fas fa-circle-check"></i> Owner Authenticated
+                </span>
+                <strong style="color: var(--navy); font-size: 0.95rem;">Master Registry: students_records.xlsx</strong>
+              </div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">
+                Total Registered Students: <strong id="ownerRecordCount" style="color: var(--navy);">0</strong> records
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+              <!-- The EXCLUSIVE Download Excel Button for the owner -->
+              <button type="button" class="btn btn-excel btn-sm" id="ownerDownloadExcelBtn">
+                <i class="fas fa-file-excel"></i> Download Master Excel (.xlsx)
+              </button>
+              <button type="button" class="btn btn-outline btn-sm" id="ownerLogoutBtn">
+                <i class="fas fa-lock"></i> Lock / Sign Out
+              </button>
+            </div>
+          </div>
+
+          <!-- Master Excel Table View -->
+          <div style="overflow-x: auto; max-height: 420px; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+            <table class="comparison-table" style="font-size: 0.85rem;">
+              <thead>
+                <tr>
+                  <th>Student ID</th>
+                  <th>Student Name</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                  <th>Email</th>
+                  <th>Contact</th>
+                  <th>Class / Course</th>
+                  <th>Enrollment Date</th>
+                </tr>
+              </thead>
+              <tbody id="ownerExcelTableBody">
+                <!-- Dynamically rendered for owner -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline btn-sm" id="closeOwnerModalBottomBtn">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: COURSE SYLLABUS                                   -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="syllabusModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="syllabusModalTitle">Course Syllabus</h3>
+          <span style="font-size: 0.82rem; color: var(--text-muted);" id="syllabusModalCode">CS-401 &bull; Accredited Degree Module</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeSyllabusModalBtn">&times;</button>
+      </div>
+      <div class="modal-body" id="syllabusModalBody">
+        <!-- Dynamically rendered syllabus content -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-sm" id="syllabusEnrollBtn">
+          <i class="fas fa-pen-nib"></i> Enroll in this Course
+        </button>
+        <button type="button" class="btn btn-outline btn-sm" id="closeSyllabusBottomBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: CONTACT TEACHER / CONSULTATION                    -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="teacherQueryModal">
+    <div class="modal-box" style="max-width: 600px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Consultation with Faculty</h3>
+          <span style="font-size: 0.82rem; color: var(--text-muted);" id="teacherModalSubtitle">Direct Mentorship Request</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeTeacherModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="teacherQueryForm">
+          <div class="form-group">
+            <label class="form-label">Recipient Faculty</label>
+            <input type="text" id="tqFacultyName" class="form-input" readonly style="background-color: var(--cream);">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Your Name <span class="required">*</span></label>
+            <input type="text" id="tqStudentName" class="form-input" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Your Student ID or Email <span class="required">*</span></label>
+            <input type="text" id="tqStudentContact" class="form-input" placeholder="e.g. STU-2026-001 or email@domain.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Consultation Topic / Question <span class="required">*</span></label>
+            <textarea id="tqQuestion" class="form-textarea" placeholder="Detail your academic query or preferred consultation slot..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i> Send Query to Teacher
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: CERTIFICATE OF QUALITY ASSESSMENT PREVIEW         -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="certificateModal">
+    <div class="modal-box" style="max-width: 680px; text-align: center;">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fas fa-award" style="color: #F59E0B;"></i> Academic Certificate of Achievement</h3>
+        <button type="button" class="modal-close-btn" id="closeCertModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="border: 6px double var(--sage); padding: 2.5rem 2rem; border-radius: var(--radius-md); background: linear-gradient(135deg, #FCFBF9, #F5F2E9);">
+          <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--navy); font-weight: 700;">
+            EduQuality Academic Council
+          </div>
+          <h2 style="font-family: var(--font-heading); color: var(--navy); margin: 1rem 0; font-size: 1.8rem;">
+            Certificate of Academic Distinction
+          </h2>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            This document certifies that the learner has demonstrated superior competency and analytical mastery in
+          </p>
+          <h4 style="font-family: var(--font-heading); color: var(--navy); font-size: 1.25rem; margin-bottom: 1rem;" id="certCourseTitle">
+            UN SDG 4: Inclusive & Equitable Quality Education
+          </h4>
+          <div style="display: inline-block; background-color: var(--sage-light); color: var(--navy); padding: 0.4rem 1.25rem; border-radius: var(--radius-pill); font-weight: 700; margin-bottom: 1.5rem;">
+            Verified Grade: Distinction (Score: <span id="certScorePct">95%</span>)
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px dashed var(--border-subtle); font-size: 0.8rem; color: var(--text-muted);">
+            <div>Date: <strong id="certDateVal">September 27, 2026</strong></div>
+            <div>Academic Registry Verification ID: <strong>EQ-CERT-2026-A1</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-sm" onclick="window.print()">
+          <i class="fas fa-print"></i> Print / Save PDF
+        </button>
+        <button type="button" class="btn btn-outline btn-sm" id="closeCertBottomBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
