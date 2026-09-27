@@ -274,7 +274,7 @@ const COURSE_DETAILS = {
   networks: {
     title: 'Computer Networks',
     subtitle: 'Core Networking Architecture & Protocols',
-    studyLink: 'https://www.darshan.ac.in/gtu-study-material/3150710-Computer-Networks',
+    studyLink: 'https://drive.google.com/file/d/1OZSdFNgaRG3fsl83PtaerltyD2JLAmLO/edit?pli=1',
     modules: [
       { name: 'Unit 1: Protocol Architecture & Physical Layer', desc: 'OSI 7-layer reference model, TCP/IP stack, transmission media, framing algorithms, and error detection (CRC).' },
       { name: 'Unit 2: Data Link Layer & Flow Control', desc: 'Sliding window protocols, Stop-and-Wait, Go-Back-N, Selective Repeat ARQ, and Ethernet framing.' },
@@ -285,7 +285,7 @@ const COURSE_DETAILS = {
   python: {
     title: 'Python for Data Science',
     subtitle: 'Numerical Computing & Predictive Analytics',
-    studyLink: 'https://jakevdp.github.io/PythonDataScienceHandbook/?utm_source=chatgpt.com',
+    studyLink: 'https://cdn.gecacademy.cn/oa/upload/2022-03-02%2014-15-49-Python%20Data%20Science%20Handbook.pdf?utm_source=chatgpt.com',
     modules: [
       { name: 'Unit 1: Vectorized Computing with NumPy', desc: 'Multidimensional ndarrays, memory strides, array broadcasting rules, linear algebra, and fast universal functions.' },
       { name: 'Unit 2: Tabular Wrangling with Pandas', desc: 'Series and DataFrames, label (.loc) vs integer (.iloc) indexing, missing value handling, and groupby Split-Apply-Combine.' },
@@ -296,7 +296,7 @@ const COURSE_DETAILS = {
   webdev: {
     title: 'Web Application Development',
     subtitle: 'Modern Full-Stack Web Engineering',
-    studyLink: 'https://developer.mozilla.org/en-US/docs/Web?utm_source=chatgpt.com',
+    studyLink: 'https://iwdd.doncolton.com/iwdd4.pdf?utm_source=chatgpt.com',
     modules: [
       { name: 'Unit 1: Semantic HTML5 & Modern CSS', desc: 'Semantic tags (<article>, <section>), CSS Box Model, responsive design principles, Flexbox alignment, and CSS Grid.' },
       { name: 'Unit 2: Asynchronous JavaScript & Event Loop', desc: 'V8 single-threaded execution, Event Loop queues, Promises, async/await syntax, DOM manipulation, and closures.' },
@@ -307,7 +307,7 @@ const COURSE_DETAILS = {
   pm: {
     title: 'Project Management',
     subtitle: 'Agile, Scrum & Traditional Methodologies',
-    studyLink: 'https://www.pmi.org/pmbok-guide-standards?utm_source=chatgpt.com',
+    studyLink: 'https://opentextbc.ca/projectmanagement/open/download?type=pdf&utm_source=chatgpt.com',
     modules: [
       { name: 'Unit 1: Project Initiation & Scope Baseline', desc: 'Project Charters, stakeholder management, the Iron Triangle (Scope, Time, Cost), and 100% Rule Work Breakdown Structures.' },
       { name: 'Unit 2: Scheduling, CPM & Float Analysis', desc: 'Precedence diagramming, Critical Path Method (CPM), forward/backward pass computations, and PERT three-point estimation.' },
@@ -318,7 +318,7 @@ const COURSE_DETAILS = {
   micro: {
     title: 'Microprocessor and Interfacing',
     subtitle: '8086 Architecture & Peripheral Chips',
-    studyLink: 'https://www.geeksforgeeks.org/microprocessor-8086/?utm_source=chatgpt.com',
+    studyLink: 'https://archive.nptel.ac.in/content/storage2/courses/106108100/pdf/Lecture_Notes/LNm3.pdf?utm_source=chatgpt.com',
     modules: [
       { name: 'Unit 1: 8086 Microprocessor Architecture', desc: 'Bus Interface Unit (BIU), Execution Unit (EU), 6-byte prefetch queue, 16-bit register files, and 20-bit physical addressing.' },
       { name: 'Unit 2: Memory Segmentation & Addressing Modes', desc: 'Segment:Offset translation ((Segment * 16) + Offset), immediate, direct, register indirect, and based-indexed modes.' },
@@ -329,7 +329,7 @@ const COURSE_DETAILS = {
   syssoft: {
     title: 'System Software',
     subtitle: 'Assemblers, Compilers, Loaders & Linkers',
-    studyLink: 'https://www.geeksforgeeks.org/system-programming/?utm_source=chatgpt.com',
+    studyLink: 'https://karanartscollege.edu.in/assets/images/ebook/SYSTEM%20SOFTWARE%20TEXTBOOK.pdf?utm_source=chatgpt.com',
     modules: [
       { name: 'Unit 1: Assemblers & Two-Pass Architecture', desc: 'Translating mnemonics to machine code, resolving forward references, Symbol Tables (SYMTAB), Opcode Tables (OPTAB), and LOCCTR.' },
       { name: 'Unit 2: Macro Processors', desc: 'Macro definition tables (DEFTAB), parameter substitution, and nested recursive macro expansion algorithms.' },
