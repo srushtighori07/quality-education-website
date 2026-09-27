@@ -75,6 +75,8 @@ html {
   color: var(--text-main);
   background-color: var(--cream);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -85,6 +87,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -2240,9 +2245,9 @@ button, input, select, textarea {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 3.5rem;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .footer-brand p {
@@ -2457,6 +2462,21 @@ button, input, select, textarea {
 }
 
 @media (max-width: 860px) {
+  .site-header {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    box-sizing: border-box !important;
+  }
+
   .mobile-toggle {
     display: block;
   }
@@ -2494,6 +2514,12 @@ button, input, select, textarea {
     grid-column: span 1 !important;
   }
 
+  .pillars-grid, .courses-grid, .materials-grid, .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+  }
+
   .feedback-grid, .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -2520,8 +2546,20 @@ button, input, select, textarea {
     padding: 3.5rem 0;
   }
 
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
   .courses-grid, .materials-grid, .announcements-grid, .teachers-grid, .pillars-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .course-card, .material-card, .pillar-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .registration-card {
@@ -2554,7 +2592,13 @@ button, input, select, textarea {
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 1.75rem !important;
+    width: 100% !important;
+  }
+
+  .footer-brand, .footer-col {
+    width: 100% !important;
   }
 }
 
