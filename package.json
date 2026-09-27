@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "test": "node test-api.js"
+    "test": "node test-api.js",
+    "tunnel": ".\\bin\\cloudflared.exe tunnel --url http://127.0.0.1:3000"
   },
   "keywords": [
     "education",
